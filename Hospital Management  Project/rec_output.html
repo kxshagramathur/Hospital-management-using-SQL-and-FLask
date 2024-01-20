@@ -1,0 +1,18 @@
+<div style="text-align:center; font-family: Arial, sans-serif;">
+  <h1 style="font-size: 32px; font-weight: bold; margin-bottom: 20px;">List Of All Patients</h1>
+</div>
+<div style="padding-top: 20px; text-align: center;">
+  <table border="1" style="margin: auto;">
+    {% for user in userDetails %}
+    <tr>
+      <td>{{user[0]}}</td>
+      <td>{{user[1]}}</td>
+      <td>{{user[2]}}</td>
+      <td>{{user[3]}}</td>
+      <td>{{user[4]}}</td>
+      <td>{{user[5]}}</td>
+      <td>{{user[6]}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
